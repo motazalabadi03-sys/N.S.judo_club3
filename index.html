@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>North Sussex Judo Club</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#000;color:#fff}
+
+nav{
+position:fixed;top:0;width:100%;
+background:rgba(0,0,0,.85);
+padding:15px;text-align:center;z-index:1000
+}
+nav a{
+color:#fff;margin:0 18px;
+text-decoration:none;font-weight:500;cursor:pointer
+}
+nav a:hover{color:#ff6b3b}
+
+section{
+display:none;min-height:100vh;
+padding:120px 20px 40px;
+background-size:cover;background-position:center;
+position:relative
+}
+section.active{display:block}
+section::before{
+content:"";position:absolute;inset:0;
+background:rgba(0,0,0,.65)
+}
+.content{
+position:relative;z-index:1;
+max-width:900px;margin:auto;text-align:center
+}
+
+h1,h2{font-family:'Playfair Display',serif;color:#ff6b3b;margin-bottom:20px}
+h1{font-size:48px}
+h2{font-size:32px}
+p{line-height:1.8;margin-bottom:15px}
+
+form{
+background:rgba(0,0,0,.65);
+padding:25px;border-radius:12px;
+max-width:420px;margin:auto
+}
+input,button{
+width:100%;padding:10px;
+margin:8px 0;border:none;border-radius:6px
+}
+button{
+background:#ff6b3b;color:#fff;
+font-weight:bold;cursor:pointer
+}
+.result{margin-top:15px;font-weight:bold}
+.trainer-img {
+  max-width: 100%;
+  height: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 2px solid orange;
+  flex-shrink: 0;
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a onclick="show('home')">Home</a>
+<a onclick="show('classes')">Classes</a>
+<a onclick="show('nutrition')">Nutrition</a>
+<a onclick="show('register')">Register</a>
+</nav>
+
+<section id="home" class="active" style="background-image:url('images/popow.jpeg')">
+<div class="content">
+<h1>North Sussex Judo Club</h1>
+<p>
+Welcome to <strong>Judo Club</strong>, where discipline, strength, and passion come together.
+We believe that sport is not just an activity, but a way of life that builds character,
+confidence, and physical excellence. Regular training plays a vital role in improving
+both physical health and mental focus.
+</p>
+
+<p>
+At <strong>Judo Club</strong>, we provide a professional and motivating environment designed
+to support athletes of all levels. Whether you are a beginner or an advanced practitioner,
+our programs are carefully structured to ensure safe progression, skill development,
+and continuous improvement.
+</p>
+
+<p>
+Our greatest strength lies in the quality of our coaches. The training team at
+<strong>Judo Club</strong> consists of highly qualified and experienced trainers who are committed
+to guiding, motivating, and inspiring every member. Through modern training methods,
+personalized coaching, and constant support, we help our athletes achieve real results.
+</p>
+
+<p>
+Join <strong>Judo Club</strong> and begin your journey toward a stronger body, sharper focus,
+and greater self-confidence. Your success starts here.
+</p>
+</div>
+</section>
+
+<section id="classes" style="background-image:url('images/imag.jab.jpg')">
+<div class="content">
+<h2>Training Programs</h2>
+<p><strong>Beginner – £25</strong></p>
+<p>
+🥉This program is designed for beginners who are new to training.
+It focuses on learning correct exercise techniques, improving basic fitness,
+and building strength gradually in a safe and supportive environment.
+</p>
+<p><strong>Intermediate – £30</strong></p>
+<p>
+🥈This program is suitable for members with prior training experience.
+It focuses on increasing strength, endurance, and overall performance through
+structured workouts and progressive training plans.
+</p>
+<p><strong>Elite – £35</strong></p>
+<p>
+🥇This program is designed for advanced athletes.
+It includes high-intensity workouts, personalized training strategies,
+and advanced techniques to maximize strength, performance, and physical conditioning.
+</p>
+<hr>
+
+<h2><strong>Our Top Trainers</strong></h2>
+
+<div class="trainer-card">
+  <img src="images/vovoc.jpeg" class="trainer-img">
+  <div class="trainer-info">
+    <h3>John Smith</h3>
+    <p>
+      Certified fitness trainer with over 8 years of experience.
+      Specialized in strength training and beginner programs.
+    </p>
+  </div>
+</div>
+
+<div class="trainer-card">
+  <img src="images/zcx.jpeg" class="trainer-img">
+  <div class="trainer-info">
+    <h3>Sarah Williams</h3>
+    <p>
+      Professional personal trainer and nutrition coach.
+      Focused on performance training and muscle building.
+    </p>
+  </div>
+</div>
+
+<div class="trainer-card">
+  <img src="images/dod.jab.jpg" class="trainer-img">
+  <div class="trainer-info">
+    <h3>Mike Johnson</h3>
+    <p>
+      Elite-level trainer specializing in high-intensity
+      and advanced athletic conditioning.
+    </p>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="nutrition" style="background-image:url('images/sosoy.jpeg')">
+<div class="content">
+<h2>Nutrition Programs</h2>
+<p><strong>60–70 kg – £40</strong> Balanced health</p>
+<p>
+This program is designed for individuals weighing between 60 and 70 kg.
+It focuses on maintaining overall health through a balanced intake of proteins,
+carbohydrates, and healthy fats. The plan helps improve daily energy levels,
+supports general wellness, and promotes a healthy lifestyle without strict restrictions.
+</p>
+<p><strong>70–80 kg – £55</strong> Performance focus</p>
+<p>
+This program is suitable for individuals weighing between 70 and 80 kg.
+It is designed to enhance physical performance by providing adequate energy,
+optimized macronutrient distribution, and proper meal timing to support training
+and recovery.
+</p>
+<p><strong>80–90 kg – £70</strong> Muscle growth</p>
+<p>
+This program is tailored for individuals weighing between 80 and 90 kg.
+Its main goal is to support muscle growth by increasing protein intake and
+overall calories. The plan helps improve strength, muscle recovery, and
+supports intensive strength training.
+</p>
+<p><strong>90–100 kg – £90</strong> Weight control</p>
+<p>
+This program is designed for individuals weighing between 90 and 100 kg.
+It focuses on controlling body weight by managing calorie intake, reducing
+body fat, and promoting healthier eating habits while maintaining essential
+nutrients.
+</p>
+</div>
+</section>
+
+<section id="register" style="background-image:url('images/jpeg.jpeg')">
+<div class="content">
+<h2>Register & Calculate</h2>
+
+<form onsubmit="calculate();return false;">
+
+<label>
+<input type="radio" name="acc" checked onclick="toggle(false)"> New Account
+</label>
+<label>
+<input type="radio" name="acc" onclick="toggle(true)"> Existing Account
+</label>
+
+<div id="login" style="display:none">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+</div>
+
+<input id="name" placeholder="Full Name" required>
+<input id="weight" type="number" placeholder="Weight (kg)" required>
+<input id="height" type="number" placeholder="Height (cm)" required>
+<input id="hours" type="number" placeholder="Private Hours" value="0">
+
+<label>
+<input type="checkbox" id="competition"> Competition (£22)
+</label>
+
+<button>Calculate</button>
+<div class="result" id="result"></div>
+</form>
+</div>
+</section>
+
+<script>
+function show(id){
+document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+document.getElementById(id).classList.add("active");
+}
+
+function toggle(show){
+document.getElementById("login").style.display=show?"block":"none";
+}
+
+function calculate(){
+let w=+weight.value;
+let h=+height.value/100;
+if(!w||!h)return;
+
+let bmi=w/(h*h);
+let status,train,trainCost,sessions;
+if(bmi<18.5){status="Underweight";train="Beginner";trainCost=25;sessions=2;}
+else if(bmi<25){status="Normal";train="Intermediate";trainCost=30;sessions=3;}
+else{status="Overweight";train="Elite";trainCost=35;sessions=4;}
+
+let nut,nutCost;
+if(w<70){nut="60–70 kg";nutCost=40;}
+else if(w<80){nut="70–80 kg";nutCost=55;}
+else if(w<90){nut="80–90 kg";nutCost=70;}
+else{nut="90–100 kg";nutCost=90;}
+
+let total=trainCost+nutCost+(hours.value*9.5);
+if(competition.checked)total+=22;
+
+result.innerHTML=
+`BMI: ${bmi.toFixed(1)}<br>
+Status: ${status}<br>
+Training: ${train} (£${trainCost})<br>
+Nutrition: ${nut} (£${nutCost})<br>
+Sessions: ${sessions}/week<br>
+Total Cost: £${total.toFixed(2)}`;
+}
+</script>
+
+</body>
+</html>
